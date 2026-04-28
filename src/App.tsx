@@ -1,21 +1,12 @@
 import "./styles/global.scss";
-import {
-  ShieldIcon,
-  SearchIcon,
-  BagIcon,
-  HeartIcon,
-  UserIcon,
-  CartIcon,
-  CrownIcon,
-  CardIcon,
-  FreteIcon,
-} from "./components/Icons";
 import { Header } from "./components/Header/Header";
+import { Banner } from "./components/Banner/Banner";
 
 function App() {
   return (
     <>
       <Header />
+      <Banner />
     </>
   );
 }
