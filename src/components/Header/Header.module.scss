@@ -135,5 +135,9 @@
     line-height: normal;
     text-transform: uppercase;
     text-decoration: none;
+
+    &:hover {
+      color: #3019b2;
+    }
   }
 }
