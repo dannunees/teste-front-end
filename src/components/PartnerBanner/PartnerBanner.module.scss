@@ -1,0 +1,69 @@
+.partnerBanner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  width: 634px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px 44px;
+
+  @media (max-width: 1199px) {
+    padding: 24px;
+    width: 100%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 0 0 20px 20px;
+    opacity: 0.8;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 85.04%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+  }
+
+  p {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 32px;
+    position: relative;
+  }
+
+  a {
+    border-radius: 6px;
+    background: #f7ca11;
+    width: 144.693px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #271c47;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+  }
+}

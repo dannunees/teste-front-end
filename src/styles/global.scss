@@ -36,3 +36,133 @@ svg {
   padding: 0 16px;
   width: 100%;
 }
+
+.categorys {
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+  overflow-x: auto;
+  padding-top: 39px;
+
+  @media (max-width: 1199px) {
+    justify-content: flex-start;
+    padding: 40px 24px 16px;
+  }
+}
+
+.productsContainer {
+  padding: 90px 0;
+  h2 {
+    color: #3442b5;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+
+    &.titleLine {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #3b4eb9;
+      font-size: 24px;
+      font-weight: bold;
+      gap: 20px;
+
+      &::before,
+      &::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background-color: #e0e0e0;
+      }
+    }
+  }
+
+  .tabsCategorys {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    list-style: none;
+    background: #fff;
+
+    @media (max-width: 1199px) {
+      justify-content: flex-start;
+      padding: 0 16px;
+      overflow-x: scroll;
+    }
+
+    li {
+      border: 1px solid #bdbdbd;
+      color: #3b3b3b;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; /* 100% */
+      text-transform: uppercase;
+      display: flex;
+      height: 40px;
+      padding: 12px 58px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex: 1 0 0;
+
+      &:hover {
+        color: #3442b5;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .boxProducts {
+    margin-top: 24px;
+  }
+}
+
+.bannersContainer {
+  display: flex;
+  gap: 13px;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+  }
+}
+
+.brandsContainer {
+  padding: 90px 0 0;
+  h2 {
+    color: #3442b5;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .brandsGrid {
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+    padding-top: 32px;
+
+    @media (max-width: 1199px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.btnAll {
+  color: #3f3f40;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}

@@ -10,6 +10,10 @@
   justify-content: center;
   position: relative;
 
+  @media (max-width: 1199px) {
+    height: 420px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -30,6 +34,10 @@
   line-height: 50px;
   max-width: 822px;
   margin-bottom: 16px;
+
+  @media (max-width: 1199px) {
+    font-size: 32px;
+  }
 }
 
 .banner p {
@@ -38,6 +46,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media (max-width: 1199px) {
+    font-size: 24px;
+  }
 
   strong {
     color: #f7ca11;

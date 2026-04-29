@@ -1,0 +1,134 @@
+.newsLetter {
+  background-color: #271c47;
+  padding: 60px 0;
+
+  .newsLetterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .newsLetterContent {
+    flex: 1;
+
+    h2 {
+      color: #fff;
+      font-family: "Outfit";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: #fff;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 18px;
+    }
+  }
+
+  .newsLetterForm {
+    flex: 1;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .formRow {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .inputName,
+    .inputEmail {
+      flex: 1;
+      height: 42px;
+      padding: 0 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ffffff;
+      font-size: 14px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 18px;
+      width: 233px;
+
+      @media (max-width: 1199px) {
+        width: 100%;
+        padding: 12px 16px;
+      }
+
+      &::placeholder {
+        color: #999999;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px #f7ca11;
+      }
+    }
+
+    .checkboxContainer {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .checkboxTerms {
+        width: 18px;
+        height: 18px;
+        accent-color: #f7ca11;
+        cursor: pointer;
+      }
+
+      label {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+        user-select: none;
+      }
+    }
+
+    .btnSubscribe {
+      width: 157px;
+      height: 42px;
+      background-color: #f7ca11;
+      color: #1a1a1a;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      flex-shrink: 0;
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
+
+      &:hover {
+        background-color: #d4a817;
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .newsLetterContainer {
+    flex-direction: column;
+  }
+
+  .formRow {
+    flex-direction: column;
+  }
+}

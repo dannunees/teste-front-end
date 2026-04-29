@@ -8,22 +8,33 @@
   justify-content: center;
   gap: 119px;
   padding: 7px 0;
+
+  @media (max-width: 1199px) {
+    gap: 0;
+  }
 }
 
 .topItem {
   display: flex;
   align-items: center;
   gap: 9px;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+  }
 }
 
 .topItem p {
   color: #9f9f9f;
   text-align: center;
-  font-family: Poppins;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  @media (max-width: 1199px) {
+    font-size: 10px;
+  }
 }
 
 .topItem strong {
@@ -42,6 +53,11 @@
   border-top: 1px solid #f0f0f0;
   border-bottom: 1px solid #f0f0f0;
   padding: 12px 0;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 
 .middleRight {
@@ -55,6 +71,10 @@
   width: 100%;
   max-width: 630px;
   padding-left: 30px;
+
+  @media (max-width: 1199px) {
+    padding-left: 0;
+  }
 }
 
 .searchInput {
@@ -86,6 +106,11 @@
   background: #fff;
   box-shadow: 0 8px 16px 0 rgba(57, 48, 19, 0.12);
   padding: 11px 69px;
+
+  @media (max-width: 1199px) {
+    padding: 11px 0;
+    overflow-x: scroll;
+  }
 }
 
 .navList {
