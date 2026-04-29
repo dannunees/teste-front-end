@@ -22,6 +22,7 @@ export const PartnerBanner = ({
       className={styles.partnerBanner}
       style={{ backgroundImage: `url(${image})` }}
     >
+      <img src={image} alt={alt} className={styles.bannerImage} />
       <h2>{title}</h2>
       <p>{description}</p>
       <a href={link}>{linkText}</a>

@@ -1,12 +1,10 @@
 import styles from "./Header.module.scss";
 import {
   ShieldIcon,
-  SearchIcon,
   BagIcon,
   HeartIcon,
   UserIcon,
   CartIcon,
-  CrownIcon,
   CardIcon,
   FreteIcon,
   LogoIcon,
