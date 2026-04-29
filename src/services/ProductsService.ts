@@ -3,7 +3,7 @@ import type { Product, ProductsResponse } from "../types/Product";
 
 const API_BASE_URL = import.meta.env.DEV
   ? "/api/teste-front-end/junior/tecnologia/lista-produtos/produtos.json"
-  : "https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json";
+  : "/api/teste-front-end/junior/tecnologia/lista-produtos/produtos.json";
 
 export const ProductsService = {
   async getProducts(): Promise<ProductsResponse> {
