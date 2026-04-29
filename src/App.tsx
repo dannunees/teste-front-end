@@ -61,25 +61,19 @@ function App() {
         <Banner />
 
         <div className="categorys container">
-          <CategoryCard title="Tecnologia" image="src/assets/tecnologia.png" />
+          <CategoryCard title="Tecnologia" image="/assets/tecnologia.png" />
           <CategoryCard
             title="Supermercados"
-            image="src/assets/supermercados.png"
+            image="/assets/supermercados.png"
           />
-          <CategoryCard title="Bebidas" image="src/assets/whiskey.png" />
-          <CategoryCard
-            title="Ferramentas"
-            image="src/assets/ferramentas.png"
-          />
-          <CategoryCard
-            title="Saúde"
-            image="src/assets/cuidados-de-saude.png"
-          />
+          <CategoryCard title="Bebidas" image="/assets/whiskey.png" />
+          <CategoryCard title="Ferramentas" image="/assets/ferramentas.png" />
+          <CategoryCard title="Saúde" image="/assets/cuidados-de-saude.png" />
           <CategoryCard
             title="Esportes e Fitness"
-            image="src/assets/corrida.png"
+            image="/assets/corrida.png"
           />
-          <CategoryCard title="Moda" image="src/assets/moda.png" />
+          <CategoryCard title="Moda" image="/assets/moda.png" />
         </div>
 
         <div className="productsContainer container">
@@ -99,7 +93,7 @@ function App() {
 
         <div className="bannersContainer container">
           <PartnerBanner
-            image="src/assets/banner-parceiro.png"
+            image="/assets/banner-parceiro.png"
             alt="Banner Parceiros"
             title="Parceiros"
             description="Lorem ipsum dolor sit amet, consectetur"
@@ -107,7 +101,7 @@ function App() {
             link="/"
           />
           <PartnerBanner
-            image="src/assets/banner-parceiro.png"
+            image="/assets/banner-parceiro.png"
             alt="Banner Parceiros"
             title="Parceiros"
             description="Lorem ipsum dolor sit amet, consectetur"
@@ -128,7 +122,7 @@ function App() {
 
         <div className="bannersContainer container">
           <PartnerBanner
-            image="src/assets/banner-parceiro.png"
+            image="/assets/banner-parceiro.png"
             alt="Banner Parceiros"
             title="Parceiros"
             description="Lorem ipsum dolor sit amet, consectetur"
@@ -136,7 +130,7 @@ function App() {
             link="/"
           />
           <PartnerBanner
-            image="src/assets/banner-parceiro.png"
+            image="/assets/banner-parceiro.png"
             alt="Banner Parceiros"
             title="Parceiros"
             description="Lorem ipsum dolor sit amet, consectetur"
@@ -148,11 +142,11 @@ function App() {
         <div className="brandsContainer container">
           <h2>Navegue por marcas</h2>
           <div className="brandsGrid">
-            <BrandsCard image="src/assets/logo-econverse.png" alt="Econverse" />
-            <BrandsCard image="src/assets/logo-econverse.png" alt="Econverse" />
-            <BrandsCard image="src/assets/logo-econverse.png" alt="Econverse" />
-            <BrandsCard image="src/assets/logo-econverse.png" alt="Econverse" />
-            <BrandsCard image="src/assets/logo-econverse.png" alt="Econverse" />
+            <BrandsCard image="/assets/logo-econverse.png" alt="Econverse" />
+            <BrandsCard image="/assets/logo-econverse.png" alt="Econverse" />
+            <BrandsCard image="/assets/logo-econverse.png" alt="Econverse" />
+            <BrandsCard image="/assets/logo-econverse.png" alt="Econverse" />
+            <BrandsCard image="/assets/logo-econverse.png" alt="Econverse" />
           </div>
         </div>
 

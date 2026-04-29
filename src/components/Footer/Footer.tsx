@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className={styles.footerTop}>
         <div className={`${styles.footerTopContainer} container`}>
           <div className={styles.footerTopLeft}>
-            <img src="src/assets/logo-footer.png" alt="Logo Econverse" />
+            <img src="/assets/logo-footer.png" alt="Logo Econverse" />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div className={styles.footerTopSocial}>
               <a href="#" aria-label="Instagram">
