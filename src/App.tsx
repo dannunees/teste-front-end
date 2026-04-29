@@ -58,7 +58,16 @@ function App() {
     <ProductsProvider>
       <>
         <Header />
-        <Banner />
+        <Banner
+          title="Venha conhecer nossas promoções"
+          subtitle={
+            <>
+              <strong>50% Off</strong> nos produtos
+            </>
+          }
+          image="/assets/banner.png"
+          buttonLabel="Ver produto"
+        />
 
         <div className="categorys container">
           <CategoryCard title="Tecnologia" image="/assets/tecnologia.png" />

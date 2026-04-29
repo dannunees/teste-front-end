@@ -27,13 +27,12 @@ export const Carousel: React.FC<CarouselProps> = ({
   const childrenArray = React.Children.toArray(children);
   const maxIndex = Math.max(0, childrenArray.length - itemsPerPage);
 
-  // Swipe handlers using react-swipeable
   const handlers = useSwipeable({
     onSwipedLeft: () => handleNext(),
     onSwipedRight: () => handlePrev(),
     preventScrollOnSwipe: true,
     swipeDuration: 250,
-    delta: 50, // Minimum swipe distance
+    delta: 50,
   });
 
   return (
