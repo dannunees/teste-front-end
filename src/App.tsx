@@ -2,56 +2,12 @@ import "./styles/global.scss";
 import { Header } from "./components/Header/Header";
 import { Banner } from "./components/Banner/Banner";
 import { CategoryCard } from "./components/CategoryCard/CategoryCard";
-import { ProductCard } from "./components/ProductCard/ProductCard";
+import { ProductsSection } from "./components/ProductsSection/ProductsSection";
+import { ProductsProvider } from "./contexts/ProductsContext";
 import { PartnerBanner } from "./components/PartnerBanner/PartnerBanner";
 import { BrandsCard } from "./components/BrandsCard/BrandsCard";
 import { Newsletter } from "./components/Newsletter/Newsletter";
 import { Footer } from "./components/Footer/Footer";
-import { ProductsProvider, useProducts } from "./contexts/ProductsContext";
-import { ProductModal } from "./components/ProductModal/ProductModal";
-import { Carousel } from "./components/Carousel/Carousel";
-
-function ProductsSection() {
-  const { products, loading, error, selectedProduct, setSelectedProduct } =
-    useProducts();
-
-  if (loading) {
-    return (
-      <div className="productsContainer container">
-        <h2 className="titleLine">Produtos Relacionados</h2>
-        <p>Carregando produtos...</p>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="productsContainer container">
-        <h2 className="titleLine">Produtos Relacionados</h2>
-        <p>Erro ao carregar produtos: {error}</p>
-      </div>
-    );
-  }
-
-  return (
-    <>
-      <Carousel>
-        {products.map((product) => (
-          <ProductCard
-            key={product.productName}
-            product={product}
-            onClick={setSelectedProduct}
-          />
-        ))}
-      </Carousel>
-
-      <ProductModal
-        product={selectedProduct}
-        onClose={() => setSelectedProduct(null)}
-      />
-    </>
-  );
-}
 
 function App() {
   return (

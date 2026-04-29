@@ -44,19 +44,56 @@ export const Carousel: React.FC<CarouselProps> = ({
         aria-label="Anterior"
       >
         <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
         >
+          <g filter="url(#filter0_d_71_4172)">
+            <circle cx="20" cy="16" r="16" fill="white" />
+          </g>
           <path
-            d="M15 18L9 12L15 6"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            d="M22.1333 10.7442L21.0009 9.59998L14.6667 16L21.0009 22.4L22.1333 21.2557L16.9316 16L22.1333 10.7442Z"
+            fill="#3F3F40"
           />
+          <defs>
+            <filter
+              id="filter0_d_71_4172"
+              x="0"
+              y="0"
+              width="40"
+              height="40"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+              />
+              <feOffset dy="4" />
+              <feGaussianBlur stdDeviation="2" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_71_4172"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_71_4172"
+                result="shape"
+              />
+            </filter>
+          </defs>
         </svg>
       </button>
 
@@ -79,19 +116,62 @@ export const Carousel: React.FC<CarouselProps> = ({
         aria-label="Próximo"
       >
         <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
         >
+          <g filter="url(#filter0_d_71_4175)">
+            <circle
+              cx="20"
+              cy="16"
+              r="16"
+              transform="rotate(180 20 16)"
+              fill="white"
+            />
+          </g>
           <path
-            d="M9 18L15 12L9 6"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            d="M17.8667 21.2558L18.9992 22.4L25.3334 16L18.9992 9.60002L17.8667 10.7443L23.0684 16L17.8667 21.2558Z"
+            fill="#3F3F40"
           />
+          <defs>
+            <filter
+              id="filter0_d_71_4175"
+              x="0"
+              y="0"
+              width="40"
+              height="40"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+              />
+              <feOffset dy="4" />
+              <feGaussianBlur stdDeviation="2" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_71_4175"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_71_4175"
+                result="shape"
+              />
+            </filter>
+          </defs>
         </svg>
       </button>
     </div>
