@@ -16,6 +16,19 @@ O teste avalia minhas competências em:
 - Componentes interativos (modal, carousel)
 - Boas práticas de código e organização
 
+## Deploy
+
+O projeto está publicado e funcionando na Vercel:
+
+**Link do Deploy**: [https://teste-front-end-flax.vercel.app/](https://teste-front-end-flax.vercel.app/)
+
+### Configurações de Deploy
+
+- **Plataforma**: Vercel
+- **Proxy CORS**: Configurado via `vercel.json` para contornar limitações da API externa
+- **Build otimizado**: TypeScript + Vite para produção
+- **Assets públicos**: Imagens servidas pela pasta `public/`
+
 ## O que Implementei
 
 ### E-commerce Funcional
@@ -101,15 +114,3 @@ src/
 - **Design System**: Cores, fontes e espaçamentos padronizados
 
 Este projeto demonstra minha capacidade de transformar requisitos complexos em código limpo, funcional e bem estruturado.
-
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
-
-## O que avaliaremos em seu teste
-
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
-
-**Boa sorte! ;)**
